@@ -1,4 +1,4 @@
-# Complex Modeling and Querying
+# Chapter 3: Complex Modeling and Querying
 ___
 ## Modeling: Data Redundancy
 ### Problems of Redundancy
