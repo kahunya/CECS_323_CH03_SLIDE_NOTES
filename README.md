@@ -1,5 +1,4 @@
 # Chapter 3: Complex Modeling and Querying
-___
 ## Modeling: Data Redundancy
 ### Problems of Redundancy
 1. data size
@@ -21,7 +20,6 @@ ___
 solution: pretty much the same as before-- use a **junction table**/**association class**.
 ### Enumerated Domains
 - you can enumerate a domain within a column (common mappings) or within a new table (large mappings) 
-___
 ## Modeling: Subclasses
 ### Inheritance
 - open hollow headed arrow in uml
@@ -41,10 +39,8 @@ ___
 - composition: aggregation but child objects have no purpose/don't exist without the parent 
 ### Recursion
 - an association that connects one class to itself
-___
 ## Modeling: Normalization
 - applying rules to improve a relational model by removing redundancy and integrity issues
-___
 ## Querying: Functions and Aggregates
 ### Aggregate Functions
 - they take a **collection of rows** and produce a **single value** as output
@@ -91,7 +87,6 @@ FROM ( // creating a "fake" table
 ) AS BIG_HITTERS
 WHERE TOTAL_HITS > 100
 ```
-___
 ## Querying: Triggers
 - constraints that cannot be expressed in the relational model are expressed using **triggers**, an RDBM function that executes when some action occurs on a table
 - runs `BEFORE`/`AFTER` an `INSERT`/`UPDATE`/`DELETE` `FOR EACH ROW`/`FOR STATEMENT`
